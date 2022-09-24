@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script
+  src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+  crossorigin="anonymous"></script>
+<script
+  src="./push.min.js"></script>
+<script
+  src="serviceWorker.min.js"></script>
+
+<script>
+
+function start() {
+    Push.create('Please drink some water.')
+
+}
+</script>
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <div class="form">
+    <form id="water-form" action="#">
+      <label for="">Would you like to receive daily reminders from us?</label>
+      <br>
+
+      <button class="page" style="padding: 200px, 100px"><a href="javascript:void(0)" onclick="start()">Yes</a></button>
+      <button onclick="window.location.href = 'https://ide.geeksforgeeks.org';">No</button>
+
+    </form>
+  </div>
+    
+</body>
+</html>
+
